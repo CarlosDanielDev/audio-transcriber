@@ -24,7 +24,7 @@ cache_ttl_secs = 300
 
 [gates]
 enabled = true
-test_command = "npm test"
+test_command = "export PATH=\"$HOME/.local/share/nvm/v22.22.0/bin:$PATH\" && npm install --silent && npm test"
 ci_poll_interval_secs = 30
 ci_max_wait_secs = 1800
 
